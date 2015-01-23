@@ -1,0 +1,51 @@
+body {
+	margin: 40px;
+	font-family: sans-serif;
+}
+.mainContain {
+	width: 700px;
+	border: 2px solid silver;
+	border-radius: 12px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 10px 10px 15px #888888;
+}
+table {
+	margin: 15px;
+}
+td {
+	padding: 10px;
+}
+.formTD {
+	width: 500px;
+}
+td input, td textarea {
+	width: 100%;
+}
+textarea {
+	height: 50px;
+}
+.bottomTable {
+	background-color: beige;
+}
+.editLink {
+	text-align: right;
+}
+.smallText {
+	font-size: .7em;
+}
+input[type="submit"] {
+	background-color: cadetblue;
+	color: white;
+	font-weight: bold;
+	width: 150px;
+}
+/*.topTableRow {
+	display: none;
+}*/
+.topTableContain {
+	display: none;
+}
+.cancelButton {
+	margin-left: 30px;
+}
