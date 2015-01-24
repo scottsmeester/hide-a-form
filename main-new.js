@@ -1,5 +1,7 @@
 $(document).on('ready', function() {
 
+	var myAnimationTime = 400;
+
   var nameTxt = $('.name').text();
   var bioTxt = $('.bio').text();
   var favBooks = $('.favBooks').text();
@@ -11,8 +13,8 @@ $(document).on('ready', function() {
   $('[name="favLibs"]').val(favLibs);
 
   $('.editButton').click(function(){
-	$('.topTableContain').slideDown(1000);
-	$(this).hide(500);
+	$('.topFormContain').slideDown(myAnimationTime);
+	$(this).hide(myAnimationTime);
   });
 
 
@@ -31,13 +33,13 @@ $(document).on('ready', function() {
   	var newFavLibsTxt = $('input[name="favLibs"]').val();
   	$('.formTD.favLibs').text(newFavLibsTxt);
 
-  	$('.topTableContain').slideUp(1000);
+  	$('.topFormContain').slideUp(myAnimationTime);
 
-	$('.editButton').show(500);
+	$('.editButton').show(myAnimationTime);
   });
 
   $('.cancelButton').click(function(){
-  	$('.topTableContain').slideUp(1000);
-	$('.editButton').show(500);
+  	$('.topFormContain').slideUp(myAnimationTime);
+	$('.editButton').show(myAnimationTime);
   });
 });

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="main-new.css">
+  </head>
+  <body>
+
+  <div class="mainContain">
+    <form>
+      <div class="topFormContain">
+        <div class="form-group">
+          <label for="nameInput">Name</label>
+          <input type="text" name="name" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="nameInput">Bio</label>
+          <textarea name="bioText" class="form-control" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="nameInput">Favorite books</label>
+          <input type="text" name="favBooks" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="nameInput">Favorite JS libraries</label>
+          <input type="text" name="favLibs" class="form-control">
+        </div>
+        <div class="form-actions">
+          <input type="submit" class="btn btn-primary" value="Save and Close">
+          <input type="button" class="btn cancelButton" value="Cancel">
+        </div>
+      </div>
+    </form>
+
+
+  <table class="bottomTable">
+  	<tr>
+  		<td>Name</td>
+  		<td class="formTD name">Scott Smeester</td>
+  	</tr>
+  	<tr>
+  		<td>Bio</td>
+  		<td class="formTD bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum alias repellendus, soluta ex excepturi molestiae perspiciatis necessitatibus voluptatem iste, veniam, quia recusandae nemo delectus, illum voluptas adipisci sint nobis voluptates!</td>
+  	</tr>
+  	<tr>
+  		<td>Favorite books</td>
+  		<td class="formTD favBooks">JavaScript Uncoded, JS The Good Parts</td>
+  	</tr>
+  	<tr>
+  		<td>Favorite JS libraries</td>
+  		<td class="formTD favLibs">jQuery, MooTools</td>
+  	</tr>
+  	<tr>
+  		<td></td>
+  		<td class="formTD editLink"><a href="#" class="editButton smallText">Edit My Info</a></td>
+  	</tr>
+  </table>
+  	
+
+</div>    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="main-new.js"></script>
+
+  </body>
+</html>
