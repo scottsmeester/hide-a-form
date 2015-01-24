@@ -3,7 +3,7 @@ $(document).on('ready', function() {
 	var myAnimationTime = 400;
 
   var nameTxt = $('.name').text();
-  var bioTxt = $('.bio').text();
+  var bioTxt = $('.bioText').text();
   var favBooks = $('.favBooks').text();
   var favLibs = $('.favLibs').text();
 
@@ -22,16 +22,16 @@ $(document).on('ready', function() {
   	e.preventDefault();
 
   	var newNameTxt = $('input[name="name"]').val();
-  	$('.formTD.name').text(newNameTxt);
+  	$('dd.name').text(newNameTxt);
 
-  	var newBioTxt = $('input[name="bioText"]').val();
-  	$('.formTD.bio').text(newBioTxt);
+  	var newBioTxt = $('textarea[name="bioText"]').val();
+  	$('dd.bioText').text(newBioTxt);
 
   	var newFavBooksTxt = $('input[name="favBooks"]').val();
-  	$('.formTD.favBooks').text(newFavBooksTxt);
+  	$('dd.favBooks').text(newFavBooksTxt);
 
   	var newFavLibsTxt = $('input[name="favLibs"]').val();
-  	$('.formTD.favLibs').text(newFavLibsTxt);
+  	$('dd.favLibs').text(newFavLibsTxt);
 
   	$('.topFormContain').slideUp(myAnimationTime);
 
