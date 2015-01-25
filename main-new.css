@@ -46,3 +46,12 @@ body {
 .infoDescription {
 	font-weight: bold;
 }
+@media screen and (max-width: 775px) {
+	body {
+		margin: 10px;
+	}
+	.mainContain {
+		width: 100%;
+		box-shadow: none;
+	}
+}
