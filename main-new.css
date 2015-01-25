@@ -12,7 +12,10 @@ body {
 	padding: 15px;
 }
 .topFormContain {
-	margin: 15px;
+	background-color: #F7F7F7;
+	border-radius: 12px;
+	padding: 15px;
+	margin-bottom: 15px;
 }
 .bottomTable {
 	background-color: beige;
