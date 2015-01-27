@@ -13,8 +13,10 @@ $(document).on('ready', function() {
   $('[name="favLibs"]').val(favLibs);
 
   $('.editButton').click(function(){
-	$('.topFormContain').slideDown(myAnimationTime);
-	$(this).hide(myAnimationTime);
+  	$('.form-group').slideDown(myAnimationTime);
+    $('.form-actions').slideDown(myAnimationTime);
+    $('.bottomTable').css({'margin-top': '15px'});
+  	$(this).hide(myAnimationTime);
   });
 
 
@@ -33,13 +35,17 @@ $(document).on('ready', function() {
   	var newFavLibsTxt = $('input[name="favLibs"]').val();
   	$('dd.favLibs').text(newFavLibsTxt);
 
-  	$('.topFormContain').slideUp(myAnimationTime);
+  	$('.form-group').slideUp(myAnimationTime);
+    $('.form-actions').slideUp(myAnimationTime);
+    $('.bottomTable').css({'margin-top': '0px'});
 
 	$('.editButton').show(myAnimationTime);
   });
 
   $('.cancelButton').click(function(){
-  	$('.topFormContain').slideUp(myAnimationTime);
+  	$('.form-group').slideUp(myAnimationTime);
+    $('.form-actions').slideUp(myAnimationTime);
+    $('.bottomTable').css({'margin-top': '0px'});
 	$('.editButton').show(myAnimationTime);
   });
 });
