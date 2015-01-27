@@ -1,6 +1,6 @@
 $(document).on('ready', function() {
 
-	var myAnimationTime = 400;
+	var myAnimationTime = 336;
 
   var nameTxt = $('.name').text();
   var bioTxt = $('.bioText').text();
